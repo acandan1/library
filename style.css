@@ -78,6 +78,7 @@ body {
     margin: 20px;
     padding: 12px;
     border-radius: 15px;
+    gap: 20px;
 
     display: flex;
     flex-direction: column;

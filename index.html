@@ -26,9 +26,9 @@
                 <div class="our-popup">
                     <button type="button" onclick="togglePopup()">Close popup!</button>
                     <h3>Add new book!</h3>
-                    <input type="text" name="bookName" id="bookName" placeholder="Name">
-                    <input type="text" name="bookAuthor" id="bookAuthor" placeholder="Author">
-                    <input type="number" name="bookPages" id="bookPages" placeholder="Pages" min="1" max="2000">
+                    <input type="text" name="bookName" id="bookName" placeholder="Name" required>
+                    <input type="text" name="bookAuthor" id="bookAuthor" placeholder="Author" required>
+                    <input type="number" name="bookPages" id="bookPages" placeholder="Pages" min="1" max="2000" required>
                     <input type="checkbox" name="bookRead" id="bookRead">
                     <label for="bookRead">I've read this book.</label>
                     <input type="button" value="Add!" id="submit-button">

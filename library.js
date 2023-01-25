@@ -1,11 +1,13 @@
 /* eslint-disable prefer-template */
 /* eslint-disable no-unused-vars */
 
-function Book(name, author, pages, read) {
-    this.name = name;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+class Book {
+    constructor(name, author, pages, read) {
+        this.name = name;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 const popup = document.querySelector(".full-screen");
