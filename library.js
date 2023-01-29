@@ -66,10 +66,21 @@ function addBookToLibrary() {
     document.querySelector(".pop-up-form").reset();
 }
 
+function validateForm() {
+    const ourName = document.getElementById("bookName");
+    const ourAuthor = document.getElementById("bookAuthor");
+    const ourPages = document.getElementById("bookPages");
+    if (ourName.checkValidity() && ourAuthor.checkValidity() && ourPages.checkValidity()) {
+        return true;
+    }
+    return false;
+}
+
 const applyButton = document.getElementById("submit-button");
 applyButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    addBookToLibrary();
+    if (validateForm()) {
+        addBookToLibrary();
+    }
 });
 
 /* let cell = document.createElement("div");
